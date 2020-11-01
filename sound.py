@@ -1,10 +1,7 @@
-import pygame
-from pygame import mixer
-mixer.init()
-soundExt = '.mp3'
-x = true
+import pygame, time
+pygame.init()
+pygame.mixer.music.load('LoseControl.mp3')
 
-pygame.mixer.Sound('assets/music/LoseControl' + soundExt)
-pygame.mixer.Sound('assets/music/LoseControl' + soundExt).play() 
-while x = true:
-	input('')
+pygame.mixer.music.play()
+time.sleep(5)
+pygame.mixer.music.fadeout(5)
